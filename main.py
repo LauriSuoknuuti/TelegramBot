@@ -4,7 +4,7 @@ from telegram.ext import Updater, CommandHandler
 
 def test(bot, update):
     chat_id = update.message.chat_id
-    bot.send_message(chat_id=chat_id, text="Paul on nörtti!")
+    bot.send_message(chat_id=chat_id, text="Paul on paras")
 
 
 def main():
