@@ -14,6 +14,7 @@ def start(bot, update):
     update.message.reply_text("Moro Kalex-kamut. "
                            "Kirjoita /commands saadaksesi lista komennoista. ")
 
+
 #:TODO parantele outputtia
 def commands(bot, update):
     chat_id = update.message.chat_id
