@@ -1,7 +1,7 @@
 import telegram as tg
 from telegram.ext import Updater, CommandHandler
 
-#Lisää tähän listaan uudet komennot
+# Lisää tähän listaan uudet komennot
 commands_list = ["/paul", "/commands"]
 
 
@@ -15,7 +15,7 @@ def start(bot, update):
                            "Kirjoita /commands saadaksesi lista komennoista. ")
 
 
-#:TODO parantele outputtia
+# :TODO parantele outputtia
 def commands(bot, update):
     chat_id = update.message.chat_id
     commands_string = ",".join(commands_list)
