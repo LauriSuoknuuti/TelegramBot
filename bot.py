@@ -1,1 +1,3 @@
-import t
+import telegram
+import bot
+bot.start()
