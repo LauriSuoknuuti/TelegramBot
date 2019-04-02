@@ -1,3 +1,3 @@
 import telegram
 import bot
-bot.start()
+bot.start(telegram.chat("Kalex-kaverit"))
