@@ -1,2 +1,2 @@
 # TelegramBot
-This is official Kalex bot
+This is the official Kalex-bot.
