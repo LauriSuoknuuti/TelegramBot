@@ -8,7 +8,7 @@ import random
 commands_dict = {"/paul": "Printtaa faktan Paulista.",
                  "/menu": "Printtaa päivän ruokalistan.",
                  "/commands": "Printtaa listan komennoista.",
-                 "/sää": "Printtaa tämänhetkisen lämpötilan"}
+                 "/weather": "Printtaa tämänhetkisen lämpötilan"}
 
 
 def paul(bot, update):
@@ -60,7 +60,7 @@ def main():
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("commands", commands))
     dp.add_handler(CommandHandler("menu", menu))
-    dp.add_handler(CommandHandler("sää", weather))
+    dp.add_handler(CommandHandler("weather", weather))
     dp.add_handler(MessageHandler(Filters.reply, echo))
     updater.start_polling()
     updater.idle()
