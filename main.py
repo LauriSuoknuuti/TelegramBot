@@ -40,7 +40,7 @@ def weather(bot, update):
 
 def echo(bot, update):
     chat_id = update.message.chat_id
-    random_text = ["vitun homo", "vitun köyhä", "vitun läski", "tapa ittes"]
+    random_text = ["vitun homo", "vitun köyhä", "vitun läski", "tapa ittes", "mee töihi"]
     bot.send_message(chat_id=chat_id, text=random.choice(random_text))
 
 
