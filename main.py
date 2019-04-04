@@ -8,7 +8,7 @@ import random
 commands_dict = {"/paul": "Printtaa faktan Paulista.",
                  "/menu": "Printtaa päivän ruokalistan.",
                  "/commands": "Printtaa listan komennoista.",
-                 "/weather": "Printtaa tämänhetkisen lämpötilan"}
+                 "/weather": "Printtaa tämänhetkisen lämpötilan."}
 
 
 def paul(bot, update):
