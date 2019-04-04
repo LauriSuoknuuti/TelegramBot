@@ -33,8 +33,8 @@ def menu(bot, update):
 
 def weather(bot, update):
     chat_id = update.message.chat_id
-    message = weather_API.main()
-    message_string = "".join(str(message))
+    message = str(weather_API.main()).split(",")[0:3]
+    message_string = "\n".join(message).replace("{", "")
     bot.send_message(chat_id=chat_id, text=message_string)
 
 
