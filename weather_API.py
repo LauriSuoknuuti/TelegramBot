@@ -7,3 +7,5 @@ def main():
     w = forecast.get_weather()
     current_weather = w.get_temperature(unit='celsius')
     return current_weather
+
+
