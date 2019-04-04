@@ -21,7 +21,6 @@ def start(bot, update):
                               "Kirjoita /commands saadaksesi lista komennoista. ")
 
 # TODO parantele outputtia, esim tyhjät pois
-# TODO weatheriin parempi output
 
 
 def menu(bot, update):
@@ -33,9 +32,10 @@ def menu(bot, update):
 
 def weather(bot, update):
     chat_id = update.message.chat_id
-    message = str(weather_API.main()).split(",")[0:3]
-    message_string = "\n".join(message).replace("{", "")
-    bot.send_message(chat_id=chat_id, text=message_string)
+    message = str(weather_API.main()).split(",")[0:4]
+    message_string = "\n".join(message)
+    message_formatted = message_string.translate({ord(i): None for i in '{['})
+    bot.send_message(chat_id=chat_id, text=message_formatted)
 
 
 def echo(bot, update):
